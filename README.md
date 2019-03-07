@@ -1,9 +1,9 @@
 # DiyLed-PythonClient
 This is the clientside of the DiyLed system for devices compatible with python3
 
-[Server]()
-[Client for ESP]()
-[DiyLed App]()
+* [Server]()
+* [Client for ESP]()
+* [DiyLed App]()
 
 #### What is the DiyLed system?
 The DiyLed system is my version of systems/enviroments like Philips Hue (sort of). This system was created to
@@ -51,6 +51,7 @@ color | int array[3] | 3 values 0 - 255 | RGB color values as array
 mode | string | defined by MODES array | Mode of the light, MODES array is provided when creating a DiyLedClient object
 
 
+
 StateGetCallback, this function is used by the DiyLedClient to get the current state of the device, as this is completely up to you, the client uses a callback function to get the state from your script, argument types and meaning are specified below the example:
 ```python
 def stateGetCallback():
@@ -64,6 +65,7 @@ state | boolean | True, False | The state of your light, e.g. on=True/off=False
 brightness | int | 0 - 255 | The brightness of your light
 mode | string | * | The mode the light is currently in
 modes | string[] | * | An array containing all available modes
+
 
 
 *Optional:* If you don't have a looping function you have to create one for the client to work properly:
