@@ -65,6 +65,9 @@ state | boolean | True, False | The state of your light, e.g. on=True/off=False
 brightness | int | 0 - 255 | The brightness of your light
 mode | string | * | The mode the light is currently in
 modes | string[] | * | An array containing all available modes
+r | int | 0 - 255 | R color value
+g | int | 0 - 255 | G color value
+b | int | 0 - 255 | B color value
 
 
 
